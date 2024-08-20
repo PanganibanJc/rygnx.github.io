@@ -1,0 +1,321 @@
+body {
+    margin: 0; /* Remove default margin from body */
+}
+
+/* Header styles */
+div.header {
+    width: 100%; /* Adjust the width to fit the parent container */
+    height: 520px; /* Keep the height as needed */
+    background-image: url('images/headerimage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire div without being cut off */
+    background-color: rgba(8, 0, 45, 0.544); /* Faint black overlay with 40% opacity */
+    background-blend-mode: overlay; /* Blends the color with the image */
+}
+
+.headerlogo {
+    text-decoration: none;
+    margin-top: 40px;
+    margin-left: 85px;
+    width: 50px;
+}
+
+.hLink {
+
+    text-decoration: none;
+}
+
+.jerseybody {
+    margin-top: 3px;
+    position: relative;
+    height: 600px;
+    background-color: rgb(208, 208, 208);
+}
+
+.tagjersey {
+    position: absolute;
+    margin-left: 910px;
+    margin-top: 20px;
+    font-family: Arial Black, sans-serif;
+    color: rgb(8, 0, 45);
+    font-size: 40px;
+}
+
+.jersey1 {
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: 50px;
+    position: absolute;
+    width: 320px;
+}
+
+.jersey2 {
+    border-radius: 20px;
+    margin-left: 450px;
+    margin-top: 120px;
+    position: absolute;
+    width: 400px;
+}
+
+.jersey3 {
+    margin-left: 800px;
+    margin-top: 100px;
+    position: absolute;
+    width: 250px;
+}
+
+
+.jersey4 {
+    margin-left: 1150px;
+    margin-top: 100px;
+    position: absolute;
+    width: 250px;
+}
+
+
+/* Header buttons styles */
+.homebutton, .shopbutton, .teambutton, .contactbutton {
+    font-family: Arial Black, sans-serif;
+    color: white;
+    font-size: 15px;
+    margin-top: -40px;
+    position: absolute;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+
+/* Hover effects for buttons */
+.shopbutton:hover, .teambutton:hover, .contactbutton:hover {
+    color: #FFD700; /* Change text color on hover (example: gold) */
+}
+
+/* Specific positions for buttons */
+
+
+
+/* Dropdown menu styles */
+/* Basic styles for the shop container */
+.home-container {
+    position: relative; /* Necessary for positioning the dropdown */
+    display: inline-block; /* Allows for the dropdown to be positioned relative to the button */
+}
+
+/* Styles for the shop button */
+.teambutton {
+    font-family: Arial Black, sans-serif;
+    color: white;
+    font-size: 15px;
+    margin-top: -56px;
+    margin-left: 480px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    padding: 20px; /* Add some padding for better appearance */
+}
+
+/* Styles for the dropdown menu */
+.home-dropdown {
+    
+    margin-left: 410px;
+    display: none; /* Hide the dropdown by default */
+    position: absolute; /* Position it relative to the shop container */
+    background-color: #ffffff; /* White background for dropdown */
+    border: 1px solid #ddd; /* Light border around the dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add shadow for depth */
+    z-index: 1; /* Ensure it appears above other content */
+    top: 100%; /* Position it below the shop button */
+    width: 250px; /* Set a fixed width for the dropdown */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styles for dropdown links */
+.home-dropdown a {
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    text-decoration: none;
+    font-family: Arial Black, sans-serif;
+    color: #000437;
+    font-size: 15px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for dropdown links */
+.home-dropdown a:hover {
+    text-decoration: none;
+    background-color: #f1f1f1; /* Change background on hover */
+}
+
+/* Show the dropdown when hovering over the shop container */
+.home-container:hover .home-dropdown {
+    
+    display: block; /* Show the dropdown */
+}
+
+/* Additional hover effect for shop button */
+.homebutton:hover {
+    color: #FFD700; /* Change text color on hover (example: gold) */
+}
+
+.homebutton {
+    margin-left: 300px;
+}
+
+
+.contactbutton {
+    margin-left: 850px;
+}
+
+/* Dropdown menu styles */
+/* Basic styles for the shop container */
+.shop-container {
+    
+    position: relative; /* Necessary for positioning the dropdown */
+    display: inline-block; /* Allows for the dropdown to be positioned relative to the button */
+}
+
+/* Styles for the shop button */
+.shopbutton {
+    font-family: Arial Black, sans-serif;
+    color: white;
+    font-size: 15px;
+    margin-top: -56px;
+    margin-left: 320px;
+    position: absolute;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    padding: 20px; /* Add some padding for better appearance */
+}
+
+/* Styles for the dropdown menu */
+.shop-dropdown {
+    
+    margin-left: 235px;
+    display: none; /* Hide the dropdown by default */
+    position: absolute; /* Position it relative to the shop container */
+    background-color: #ffffff; /* White background for dropdown */
+    border: 1px solid #ddd; /* Light border around the dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add shadow for depth */
+    z-index: 1; /* Ensure it appears above other content */
+    top: 100%; /* Position it below the shop button */
+    width: 250px; /* Set a fixed width for the dropdown */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styles for dropdown links */
+.shop-dropdown a {
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    text-decoration: none;
+    font-family: Arial Black, sans-serif;
+    color: #000437;
+    font-size: 15px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for dropdown links */
+.shop-dropdown a:hover {
+    text-decoration: none;
+    background-color: #f1f1f1; /* Change background on hover */
+}
+
+/* Show the dropdown when hovering over the shop container */
+.shop-container:hover .shop-dropdown {
+    
+    display: block; /* Show the dropdown */
+}
+
+/* Additional hover effect for shop button */
+.shopbutton:hover {
+    color: #FFD700; /* Change text color on hover (example: gold) */
+}
+
+.jdscrptn {
+    color: #585858;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 920px;
+    margin-top: 120px;
+    font-size: 18px;
+}
+
+.footer {
+    position: relative;
+    margin-top: 3px; /* 3px margin from the top, ensuring it's below the body image */
+    width: 100%; /* Adjust the width to fit the parent container */
+    height: 120px; /* Keep the height as needed */
+    background-color: #ffd700;
+}
+
+.botjersey {
+    margin-left: 890px;
+    margin-top: 400px;
+    width: 600px;
+    
+}
+
+.order {
+    margin-top: 428px;
+margin-left: 1080px;
+    position: absolute;
+    font-family: Arial Black, sans-serif;
+    font-style: italic;
+    color: #f1f1f1;
+    font-size: 30px;
+}
+
+.order:hover {
+    color: #FFD700; /* Change text color on hover (example: gold) */
+}
+
+
+.footertxt {
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute  ;
+    color: #000437;
+    margin-left: 170px;
+    margin-top: -45px;
+}
+
+.flink {
+
+    text-decoration: none;
+}
+
+.fblogo {
+    position: absolute;
+    margin-left: 1080px;
+    margin-top: 52px;
+    width: 30px;
+}
+
+.xlogo {
+    position: absolute;
+    margin-left: 1160px;
+    margin-top: 52px;
+    width: 30px;
+}
+
+.gmlogo {
+    position: absolute;
+    margin-left: 1120px;
+    margin-top: 52px;
+    width: 30px;
+}
+
+.ytlogo {
+    position: absolute;
+    margin-left: 1200px;
+    margin-top: 52px;
+    width: 30px;
+}
+
