@@ -92,10 +92,6 @@ div.header {
 
 /* Specific positions for buttons */
 
-
-
-/* Dropdown menu styles */
-/* Basic styles for the shop container */
 .home-container {
     position: relative; /* Necessary for positioning the dropdown */
     display: inline-block; /* Allows for the dropdown to be positioned relative to the button */
@@ -114,11 +110,11 @@ div.header {
 
 /* Styles for the dropdown menu */
 .home-dropdown {
-    
+    border-radius: 20px;
     margin-left: 410px;
     display: none; /* Hide the dropdown by default */
     position: absolute; /* Position it relative to the shop container */
-    background-color: #ffffff; /* White background for dropdown */
+    background-color: #ffffffb5;; /* White background for dropdown */
     border: 1px solid #ddd; /* Light border around the dropdown */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add shadow for depth */
     z-index: 1; /* Ensure it appears above other content */
@@ -138,15 +134,19 @@ div.header {
 
     text-decoration: none;
     font-family: Arial Black, sans-serif;
-    color: #000437;
+    color: #FFD700;
     font-size: 15px;
     transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 /* Hover effect for dropdown links */
 .home-dropdown a:hover {
+
+        
+    color: #000437; /* Change text color on hover (example: gold) */
     text-decoration: none;
-    background-color: #f1f1f1; /* Change background on hover */
+    
+
 }
 
 /* Show the dropdown when hovering over the shop container */
@@ -191,11 +191,11 @@ div.header {
 
 /* Styles for the dropdown menu */
 .shop-dropdown {
-    
+    border-radius: 20px;
     margin-left: 235px;
     display: none; /* Hide the dropdown by default */
     position: absolute; /* Position it relative to the shop container */
-    background-color: #ffffff; /* White background for dropdown */
+    background-color: #ffffffb5; /* White background for dropdown */
     border: 1px solid #ddd; /* Light border around the dropdown */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add shadow for depth */
     z-index: 1; /* Ensure it appears above other content */
@@ -212,18 +212,21 @@ div.header {
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
-
+    
     text-decoration: none;
     font-family: Arial Black, sans-serif;
-    color: #000437;
+    color: #FFD700;
     font-size: 15px;
     transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 /* Hover effect for dropdown links */
 .shop-dropdown a:hover {
+
+    
+    color: #000437; /* Change text color on hover (example: gold) */
     text-decoration: none;
-    background-color: #f1f1f1; /* Change background on hover */
+    
 }
 
 /* Show the dropdown when hovering over the shop container */
@@ -238,6 +241,7 @@ div.header {
 }
 
 .jdscrptn {
+    padding-right: 70px;
     color: #585858;
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
@@ -319,3 +323,23 @@ margin-left: 1080px;
     width: 30px;
 }
 
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    display: none; /* Initially hidden */
+    z-index: 1000;
+    cursor: pointer;
+}
+
+/* Show the arrow when scrolling down */
+.scroll-to-top.visible {
+    display: block;
+}
